@@ -6,15 +6,6 @@
 -->
 <html>
 	<head>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NRLHSYXFZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5NRLHSYXFZ');
-</script>
 		<title>Shivam Mahajan's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -29,23 +20,22 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1><b>Shivam Mahajan</b></h1>
+							<h1>Shivam Mahajan</h1>
 							<p class="major">Computer Science and Mathematics Student</p>
-							<p class="major">Software engineer fellow at Headstarter AI</p>
+							<p class="major">Software Engineering Fellow at Headstarter AI</p>
 							<ul class="actions stacked">
-								<li><a href="pdf/Shivam-Mahajan Resume.pdf" class="button big wide" target="_blank">RESUME</a></li>
+								<li><a href="pdf/Mahajan.Shivam Resume.pdf" class="button big wide" target="_blank">RESUME</a></li>
 							</ul>
 						</div>
 						<div class="image">
 							<img src="images/TEMPLATE1.jpeg" alt="" />
 						</div>
-						
 					</section>
 
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2><b>COMPUTER SCIENCE AND MATHEMATICS MAJOR AT BELOIT COLLEGE</b></h2>
+							<h2>COMPUTER SCIENCE AND MATHEMATICS MAJOR AT BELOIT COLLEGE</h2>
 							<p>I am a Senior at Beloit College with a good academic standing. I am passionate about coding and logic building. I thrive on creating innovative projects and continuously seek to enhance my skills and knowledge in the tech field. You can find more about my projects and experiences below.</p>
 							<!-- <ul class="actions stacked">
 								<li><a href="#" class="button">Learn More</a></li>
@@ -59,7 +49,7 @@
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-right onscroll-image-fade-in">
 						<div class="content">
-							<h2><b>SOFTWARE ENGINEERING FELLOW AT HEADSTARTER AI</b></h2>
+							<h2>SOFTWARE ENGINEERING FELLOW AT HEADSTARTER AI</h2>
 							<p>At Headstarter AI, I am currently building five industry-standard AI projects, culminating in a final project where I will tackle a company's current backlog to meet their business requirements. On a daily basis, I collaborate with software engineers from leading companies such as Google, Microsoft, and Apple. Additionally, I actively participate in hackathons to further enhance my skills and experience. meet business requirements. On a daily basis we are working with software engineers from companies like Google, Microsoft and Apple. Alongside, I will also take part in hackathons.</p>
 							<!-- <ul class="actions stacked">
 								<li><a href="#" class="button">Learn More</a></li>
@@ -73,10 +63,10 @@
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
 						<div class="content">
-							<h2><b>FINANCE MANAGEMENT SOFTWARE</b></h2>
+							<h2>FINANCE MANAGEMENT SOFTWARE</h2>
 							<p>I developed innovative software to manage multiple businesses simultaneously using Tally accounting software. Tally is a popular choice for business finance management but has a limitation: it handles companies individually. My solution overcomes this by connecting a web application running on a Flask server to Tally. </p>
 							<p>When a contract is entered on the web application, it seamlessly integrates with Tally using RabbitMQ and Celery. As soon as billing is completed in Tally, my software updates the web application and database, making it efficient to manage multi-million dollar finances across multiple businesses.</p>
-							<p>Tools used include: Flask, RabbitMQ, Celery, SQLite, AWS, Bootstrap, XML, ODBC interface and Test cases.</p>
+							<p>Tools used include: Flask, RabbitMQ, Celery, SQLite, AWS, XML, ODBC interface and Test cases.</p>
 							<!-- <ul class="actions stacked">
 								<li><a href="#" class="button">Learn More</a></li>
 							</ul> -->
@@ -86,18 +76,87 @@
 						</div>
 					</section>
 
-				<!-- Five -->
+				<!-- Five : PROJECTS-->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2><b>PROJECTS AND CO-CURRICULAR EXPERIENCE</b></h2>
+							<h2>PROJECTS AND CO-CURRICULAR EXPERIENCE</h2>
 							<p>
 								Below are images showcasing some of my projects. I serve as the President and Treasurer of the Cricket Club at Beloit College and am also a College Ambassador for Chess.com.</p>
 						</div>
 
+				<!-- Study Stash-->
+				<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
+					<div class="content">
+						<h2>StudyStash - AI integrated flashcard generator.</h2>
+						<p> <b>StudyStash</b> is an <b>OpenAI</b> powered flashcard generator which is capable of helping people learn about topics easily by narrowing down the major topic to small topics. </p>
+						<p><b>Tools used - Next.js, MUI, OpenAI API, TypeScript, Vercel, Stripe API, Clerk API, Firebase.</b></p>
+						<p>The project has a sign-in/sign-up method utilized through <b>clerk</b> where users can setup their accounts for saving the flashcards into their account. </p>
+						<p>The website has a payment process utilized through <b>Stripe</b> which can help users have premium version and have additional perks.</p>
+						<p>StudyStash also offers users to save their flashcards and store them in the database which is handled by <b>Firebase</b> in backend.</p>
+						<p>The source code can be found on my github - @mahajan-codes.</p>
+						<!-- <ul class="actions stacked">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</div>
+					<div class="video-container">
+						<video src="videos/StudyStash.mp4" controls></video>
+						<!-- Check for and remove any extra empty elements here -->
+					</div>
+					
+					
+
+					<!--<video width="600" controls>
+						<source src="videos/StudyStash.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					  </video>-->
+					  
+				</section>
+
+			    <!-- Customer AI CHAT BOT-->
+						<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
+							<div class="content">
+								<h2>AI-CHAT-BOT</h2>
+								<p> Custom AI-CHAT-BOT designed specically for HeadstarterAI. The bot is capable of handling every query assigned to it. </p>
+								<p>It is powered by OpenAI gpt 4o. At the start, it greets you with "Hi! I'm the Headstarter support assistant. How can I help you today?"</p>
+								<p>Tools used include: Javascript: React and next, HTML/CSS. Hosted on vercel.</p>
+								<p>The source code can be found on my github - @mahajan-codes.</p>
+								<!-- <ul class="actions stacked">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul> -->
+							</div>
+
+							<div class="video-container">
+								<video src="videos/ai-cust-support.mp4" controls></video>
+								<!-- Check for and remove any extra empty elements here -->
+							</div>
+							
+
+							<!-- <video width="600" controls>
+								<source src="videos/ai-cust-support.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							  </video> -->
+							  
+						</section>
+				
+
 						<!-- Gallery -->
+						<div class="gallery style2 medium lightbox onscroll-fade-in">
+							<article>
+								<a href="images/gallery/fulls/WhatsApp Image 2024-08-21 at 1.00.06 AM.jpeg" class="image">
+									<img src="images/gallery/thumbs/WhatsApp Image 2024-08-21 at 1.00.06 AM.jpeg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>CUSTOMER AI CHAT BOT</h3>
+									<p>Built this customer AI chatbot powered by OpenAI gpt-4 to handle any sort of customer support required.</p>
+									<ul class="actions fixed">
+										<li><span class="button small">Details</span></li>
+									</ul>
+								</div>
+							</article>
+							
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
-									<a href="images/gallery/thumbs/SONA.jpg" class="image">
+									<a href="images/gallery/fulls/SONA.jpg" class="image">
 										<img src="images/gallery/thumbs/SONA.jpg" alt="" />
 									</a>
 									<div class="caption">
@@ -109,7 +168,7 @@
 									</div>
 								</article>
 								<article>
-									<a href="images/gallery/thumbs/tally1.jpeg" class="image">
+									<a href="images/gallery/fulls/tally1.jpeg" class="image">
 										<img src="images/gallery/thumbs/tally1.jpeg" alt="" />
 									</a>
 									<div class="caption">
@@ -121,7 +180,7 @@
 									</div>
 								</article>
 								<article>
-									<a href="images/gallery/thumbs/cricket.jpeg" class="image">
+									<a href="images/gallery/fulls/cricket.jpeg" class="image">
 										<img src="images/gallery/thumbs/cricket.jpeg" alt="" />
 									</a>
 									<div class="caption">
@@ -133,7 +192,7 @@
 									</div>
 								</article>
 								<article>
-									<a href="images/gallery/thumbs/chess.jpg" class="image">
+									<a href="images/gallery/fulls/chess.jpg" class="image">
 										<img src="images/gallery/thumbs/chess.jpg" alt="" />
 									</a>
 									<div class="caption">
@@ -151,13 +210,13 @@
 				<!-- Six -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2><b>SKILLS AND CERTIFICATIONS</b></h2>
+							<h2>SKILLS AND CERTIFICATIONS</h2>
 							<p>Throughout my academic journey, I have gained numerous skills and certifications that have enhanced my expertise and professional development.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
 									<span class="icon style2 major fa-gem"></span>
 									<h3>Programming  Languages</h3>
-									<p>Python, Java, JavaFX, JavaScript, C, C++, SQL, MATLAB, Bootstrap </p>
+									<p>Python, Java, JavaFX, JavaScript, C, C++, SQL, MATLAB </p>
 									<p>I have gained proficiency in the languages above by implementing them in projects and obtaining certifications.</p>
 								</section>
 								<section>
@@ -190,7 +249,7 @@
 						</div>
 					</section>
 
-				<!-- Seven 
+				<!-- Seven -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
@@ -215,23 +274,6 @@
 							</form>
 
 						</div>
-					</section> -->
-
-
-					<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
-						<div class="content">
-							<h2> <b>MY VISION</b></h2>
-							<p><b>As I work on various projects and build my expertise, I am dedicated to expanding my skillset and staying current with emerging technologies. With the advancement of artificial intelligence, I am particularly focused on contributing to and shaping the future of AI, aiming to drive innovation and create meaningful impact in this dynamic field.</b></p>
-							<p><b>In next 3 years,</b> I aim to work as a Backend Developer for a dynamic start-up or technology company, honing my skills and contributing to innovative projects. </p>
-							<p><b>Over the next 10 years,</b> I will focus on advancing my career and expertise by engaging in projects that deliver substantial business and social impact, striving to reach users around the globe.</p>
-							<p> <b>By 2035,</b> I aspire to launch a project that reflects my passions and delivers significant social value, making a meaningful difference in the world.</p>
-							<!-- <ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
-						</div>
-						<!--  <div class="image">
-							<img src="images/financial.jpg" alt="" />
-						</div> -->
 					</section>
 
 				<!-- Footer -->
@@ -240,16 +282,14 @@
                             <h2><b>CONTACT ME</b></h2>
                             <p> <b>My social media handles:</b> </p>
 							<ul class="icons">
-								<li><a href="https://www.facebook.com/profile.php?id=100058578245572" class="icon brands style2 fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/shivam_mahajan18?igsh=dnhrMmNyaDVmMXJr" class="icon brands style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/shivam-mahajan18/" class="icon brands style2 fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:mahajans@beloit.edu" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-								<li><a href="https://github.com/mahajan-codes" class="icon brands style2 fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100058578245572" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/shivam_mahajan18?igsh=dnhrMmNyaDVmMXJr" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/shivam-mahajan18/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:mahajans@beloit.edu" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 							<p>&copy; Shivam Mahajan. Story: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
