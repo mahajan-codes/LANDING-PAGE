@@ -7,13 +7,13 @@
 <html>
 	<head>
 		<title>Shivam Mahajan's Portfolio</title>
-		<link rel="icon" href="images/coding.ico" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -23,9 +23,9 @@
 						<div class="content">
 							<h1>Shivam Mahajan</h1>
 							<p class="major">Computer Science and Mathematics Student</p>
-							<p class="major">Software Engineering Intern at Headstarter AI</p>
+							<p class="major">Software Engineering Fellow at Headstarter AI</p>
 							<ul class="actions stacked">
-								<li><a href="pdf/Shivam_Mahajan_Resume.pdf" class="button big wide" target="_blank">RESUME</a></li>
+								<li><a href="pdf/Mahajan.Shivam Resume.pdf" class="button big wide" target="_blank">RESUME</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -50,7 +50,7 @@
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-right onscroll-image-fade-in">
 						<div class="content">
-							<h2>SOFTWARE ENGINEERING INTERN AT HEADSTARTER AI</h2>
+							<h2>SOFTWARE ENGINEERING FELLOW AT HEADSTARTER AI</h2>
 							<p>At Headstarter AI, I am currently building five industry-standard AI projects, culminating in a final project where I will tackle a company's current backlog to meet their business requirements. On a daily basis, I collaborate with software engineers from leading companies such as Google, Microsoft, and Apple. Additionally, I actively participate in hackathons to further enhance my skills and experience. meet business requirements. On a daily basis we are working with software engineers from companies like Google, Microsoft and Apple. Alongside, I will also take part in hackathons.</p>
 							<!-- <ul class="actions stacked">
 								<li><a href="#" class="button">Learn More</a></li>
@@ -60,6 +60,30 @@
 							<img src="images/BG_2.png" alt="" />
 						</div>
 					</section>
+					<!-- Theme Toggle Switch -->
+					 <div class="theme-toggle">
+						<label class="switch">
+							<input type="checkbox" id="theme-switch">
+							<span class="slider"></span>
+						</label>
+						<span class="theme-label">Theme Switch</span>
+
+					</div>
+					<script>
+						const themeSwitch = document.getElementById('theme-switch');
+						const currentTheme = localStorage.getItem('theme') || 'light';
+					
+						document.documentElement.setAttribute('data-theme', currentTheme);
+						themeSwitch.checked = currentTheme === 'dark';
+					
+						themeSwitch.addEventListener('change', function() {
+							const theme = themeSwitch.checked ? 'dark' : 'light';
+							document.documentElement.setAttribute('data-theme', theme);
+							localStorage.setItem('theme', theme);
+						});
+					</script>
+					
+
 
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
@@ -301,6 +325,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+	
+
 
 	</body>
 </html>
