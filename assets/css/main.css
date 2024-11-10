@@ -8679,7 +8679,7 @@ input, select, textarea {
 .theme-toggle {
     position: fixed;
     top: 50rem;
-    right: 95rem;
+    right: 125rem;
     z-index: 1000;
 	display: flex;
     align-items: center;
