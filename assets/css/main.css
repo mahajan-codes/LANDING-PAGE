@@ -8759,7 +8759,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-h1, h2, h3, p, .theme-label, b {
+h1, h2, h3, p, .theme-label, b, li, a, label, input{
     color: var(--text-color);
 }
 
@@ -8767,3 +8767,73 @@ button, .button {
     background-color: var(--primary-color);
 }
 
+/* Light Theme Form Styles */
+
+.fields .field input,
+.fields .field textarea {
+    color: var(--text-color-light);
+    background-color: #0000;
+    border: 1px solid #ddd;
+}
+
+.fields .field label{color: var(--text-color-light);
+    background-color: #0000;
+    border: none;}
+
+/* Dark Theme Form Styles */
+.dark-theme .fields .field label {
+    color: var(--text-color-dark); /* Labels in dark theme */
+}
+
+.dark-theme .fields .field input,
+.dark-theme .fields .field textarea {
+    color: var(--text-color-dark); /* Input text color */
+    background-color: #333; /* Darker background for inputs */
+    border: 1px solid #666; /* Subtle border for inputs */
+}
+
+.dark-theme .actions.special input[type="submit"] {
+    color: #000; /* Submit button text color */
+    background-color: #444; /* Darker background for button */
+    border: 1px solid #666;
+}
+
+/* Light Theme Submit Button */
+.actions.special li input[type="submit"] {
+    border: none; /* Removes border */
+    background-color: #fff; /* Set a light green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Adds padding for better size */
+    cursor: pointer; /* Changes cursor to a pointer when hovered */
+    font-size: 16px; /* Adjusts font size */
+    outline: none; /* Removes focus outline */
+    display: inline-block; /* Makes the button inline */
+    text-align: center; /* Centers the text */
+    width: auto; /* Ensures the width adjusts to the text */
+    height: auto; /* Ensures the height adjusts to the content */
+    line-height: normal; /* Adjusts line height to fit text better */
+}
+
+/* Dark Theme Submit Button */
+.dark-theme .actions.special li input[type="submit"] {
+    border: none; /* Removes border */
+    background-color: #333; /* Dark background */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Same padding */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Same font size */
+    outline: none; /* Removes focus outline */
+    display: inline-block; /* Makes the button inline */
+    text-align: center; /* Centers the text */
+    width: auto; /* Ensures the width adjusts to the text */
+    height: auto; /* Ensures the height adjusts to the content */
+    line-height: normal; /* Adjusts line height to fit text better */
+}
+
+.actions.special li input[type="submit"]:hover {
+    background-color: #fff; /* Light green when hovered */
+}
+
+.dark-theme .actions.special li input[type="submit"]:hover {
+    background-color: #555; /* Darker background when hovered */
+}
