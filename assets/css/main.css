@@ -8678,8 +8678,8 @@ input, select, textarea {
 /* Theme Toggle Switch */
 .theme-toggle {
     position: fixed;
-    top: 50rem;
-    right: 85rem;
+    top: 45rem;
+    right: 95rem;
     z-index: 1000;
 	display: flex;
     align-items: center;
@@ -8690,6 +8690,7 @@ input, select, textarea {
     margin-left: 0.5rem; /* Space between the switch and the text */
     font-size: 1rem;
     color: var(--text-color);
+	font-weight: bold;
 }
 
 .switch {
@@ -8837,3 +8838,44 @@ button, .button {
 .dark-theme .actions.special li input[type="submit"]:hover {
     background-color: #555; /* Darker background when hovered */
 }
+
+/* Common styles for the switch container */
+.theme-switch-container {
+    position: fixed; /* Fix the position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom of the screen */
+    right: 20px; /* 20px from the right side of the screen */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between the switch and the label */
+	
+}
+
+/* Ensuring the switch is responsive */
+@media (max-width: 600px) {
+    .theme-switch-container {
+        bottom: 15px; /* Adjust for smaller screens */
+        right: 15px; /* Adjust for smaller screens */
+        gap: 3px; /* Reduce space between switch and label on smaller screens */
+    }
+}
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .theme-switch-container {
+        bottom: 20px; /* Keep it 20px from the bottom on medium screens */
+        right: 20px; /* Keep it 20px from the right on medium screens */
+    }
+}
+
+/* For very large screens (optional adjustments for extra-large desktops) */
+@media (min-width: 1200px) {
+    .theme-switch-container {
+        bottom: 25px; /* Adjust for large screens */
+        right: 25px; /* Adjust for large screens */
+		
+    }
+}
+
