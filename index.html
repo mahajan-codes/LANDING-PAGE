@@ -61,14 +61,17 @@
 						</div>
 					</section>
 					<!-- Theme Toggle Switch -->
-					 <div class="theme-toggle">
-						<label class="switch">
-							<input type="checkbox" id="theme-switch">
-							<span class="slider"></span>
-						</label>
-						<span class="theme-label">Theme Switch</span>
-
+					<div class="theme-switch-container">
+						<div class="theme-switch-box">
+							<label class="switch">
+								<input type="checkbox" id="theme-switch">
+								<span class="slider"></span>
+							</label>
+							<span class="theme-label">Theme Switch</span>
+						</div>
 					</div>
+					
+					
 					<script>
 						const themeSwitch = document.getElementById('theme-switch');
 						const currentTheme = localStorage.getItem('theme') || 'light';
